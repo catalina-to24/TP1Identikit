@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding-top: 80px; /* Ajusta este valor según la altura del nav */
+    padding-top: 35px; /* Ajusta este valor según la altura del nav */
     background-color: rgb(212, 189, 233);
 }
 .center-content {
@@ -11,15 +11,18 @@ body {
     text-align: center;
 }
 
+.secondaryPage {
+    padding-top: 0;
+}
+
 .indice {
     background-color: rgb(107, 75, 137);
-    padding: 10px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 800; 
 }
 
 .indice ul {
@@ -28,6 +31,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+    height: 60px;
 }
 
 
@@ -129,7 +133,7 @@ table img {
     border-radius: 15px;
 }
 
-star {
+.star {
     width: 25px;
     height: 20px;
 }
