@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia de Logos</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <h1>Trivia de logos</h1>
+    <div id="trivia">
+        <p id="question">¿De qué marca es este logo?</p>
+        <img id="logo" src="img/beats.jpg" alt="Logo">
+        <br>
+        <div id="options">
+            
+            <button onclick="checkAnswer(this, 'Traget')">Traget</button>
+            <button onclick="checkAnswer(this, 'Beats')">Beats</button>
+            <button onclick="checkAnswer(this, 'Bets')">Bets</button>
+        </div>
+        <p id="feedback" style="font-weight: bold;"></p>
+    </div>
+    <a href="index.html" class="back-to-top">Volver al inicio</a>
+
+    <script>
+        // Preguntas y respuestas
+        const questions = [
+            {
+                logo: "img/McDonalds.png",
+                correct: "McDonalds",
+                options: ["Burger King", "McDonalds", "Mostaza"]
+            },
+            {
+                logo: "img/beats.jpg",
+                correct: "Beats",
+                options: ["Beats", "Traget", "Bets"]
+            },
+            
+            {
+                logo: "img/pepsi.jpg",
+                correct: "Pepsi",
+                options: ["Fanta", "Coca Cola", "Pepsi"]
+            },
+            {
+                logo: "img/apple.png",
+                correct: "Apple",
+                options: ["Apple", "Microsoft", "Samsung"]
+            },
+            {
+                logo: "img/ford.png",
+                correct: "Ford",
+                options: ["Chevrolet", "Ford", "Toyota"]
+            },
+            {
+                logo: "img/instagram.png",
+                correct: "Instagram",
+                options: ["Facebook", "Instagram", "Snapchat"]
+            },
+            {
+                logo: "img/nike.png",
+                correct: "Nike",
+                options: ["Adidas", "Nike", "Puma"]
+            },
+            {
+                logo: "img/mastercard.png",
+                correct: "Mastercard",
+                options: ["Master", "Mastercard", "Visa"]
+            },
+            {
+                logo: "img/spotify.png",
+                correct: "Spotify",
+                options: ["Youtube Music", "Spotify", "Musicly"]
+            }
+
+        ];
+
+        let currentQuestion = 0;
+
+        function loadQuestion() {
+            const question = questions[currentQuestion];
+            document.getElementById("logo").src = question.logo;
+            document.getElementById("feedback").textContent = "";
+            const optionsDiv = document.getElementById("options");
+            optionsDiv.innerHTML = ""; // Limpiar opciones anteriores
+            question.options.forEach(option => {
+                const button = document.createElement("button");
+                button.textContent = option;
+                button.onclick = () => checkAnswer(button, option);
+                optionsDiv.appendChild(button);
+            });
+        }
+
+        function checkAnswer(button, answer) {
+            const question = questions[currentQuestion];
+            const feedback = document.getElementById("feedback");
+            if (answer === question.correct) {
+                feedback.style.color = "green";
+                feedback.textContent = "¡Correcto! 🎉";
+                currentQuestion++;
+                if (currentQuestion < questions.length) {
+                    setTimeout(loadQuestion, 1000); // Cargar la siguiente pregunta después de 1 segundo
+                } else {
+                    feedback.textContent = "¡Felicidades! Has completado la trivia. 🎉, hacé clic en el botón para volver a la pagina principal 👋 ";
+                }
+            } else {
+                feedback.style.color = "red";
+                feedback.textContent = "Incorrecto. 😢 Intenta de nuevo.";
+            }
+        }
+
+        // Cargar la primera pregunta al inicio
+        loadQuestion();
+    </script>
+</body>
+</html>

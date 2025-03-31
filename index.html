@@ -4,93 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Identikit</title>
-    <!-- ícono página  -->
+    <!-- ícono página -->
     <link rel="shortcut icon" href="img/cardano_ada_crypto_icon_264376.png" type="image/png">
-
-    <style>
-        body {
-            margin: 0;
-            background-color: rgb(212, 189, 233);
-        }
-        h1 {
-            font-family: 'Roboto', sans-serif;
-            text-align: center;
-            color: plum;
-            margin-bottom: 0;
-            background-color: rgb(107, 75, 137);
-            margin-left: auto;
-            margin-right: auto;
-            width: 500px;
-            border-radius: 20px;
-           
-        }
-        p {
-            font-family: 'Roboto', sans-serif;
-            text-align: center;
-            margin-top: 0;
-        }
-        img {
-            border-radius: 20px;
-        }
-        blockquote {
-            text-align: center;
-        }
-        h2 {
-            font-family: 'Roboto', sans-serif;
-            text-align: center;
-            color: plum;
-            background-color: rgb(107, 75, 137);
-            margin-left: auto;
-            margin-right: auto;
-            width: 500px;
-            border-radius: 20px;
-        }
-        table {
-            border-radius: 15px;
-            width: 600px;
-            margin: 0 auto;
-            border-collapse: collapse;
-            border-color: black;
-            padding: 30px;
-            border: 5px solid rgb(107, 75, 137);
-            
-        }
-        td {
-            font-family: 'Roboto', sans-serif;
-            border-radius: 15px;
-            text-align: center;
-            padding: 10px;
-            border: 3px solid rgb(107, 75, 137);
-            border-style: dashed;
-        }
-        table img {
-            width: 200px;
-            height: 150px;
-            border-radius: 15px;
-            
-        }
-        .star {
-            width: 25px;
-            height: 20px;
-        }
-        .back-to-top {
-            display: block;
-            width: 100px;
-            margin: 20px auto;
-            padding: 10px;
-            text-align: center;
-            color: plum;
-            background-color: rgb(107, 75, 137);
-            text-decoration: none;
-            border-radius: 20px;
-
-        }
-    </style>
-
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -112,66 +33,11 @@
     </center>
     <br>
 
-    <h2>Más sobre mi</h2>
-
-    <!-- tabla -->
-    <table>
-        <!-- fila -->
-        <tr>
-            <!-- celda rowspan para que tome el tamaño de la columna -->
-            <td colspan="6"><strong>Ranking de comidas</strong></td>
-        </tr>
-        <tr>
-            <td>Plato</td>
-            <td>Imagen</td>
-            <td>Puntuación</td>
-        </tr>
-        <tr>
-            <td>Sushi</td>
-            <td><img src="img/sushi.jpg" alt="Imagen de un plato de sushi"></td>
-            <td>
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-            </td>
-        </tr>
-        <tr>
-            <td>Arroz con pollo</td>
-            <td><img src="img/arroz.jpg" alt="Imagen de un plato de arroz con pollo"></td>
-            <td>
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-            </td>
-        </tr>
-        <tr>
-            <td>Milanesa con papas</td>
-            <td><img src="img/milanesa.jpg" alt="Imagen de un plato de milanesa con papas fritas"></td>
-            <td>
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-            </td>
-        </tr>
-        <tr>
-            <td>Canelones de verdura</td>
-            <td><img src="img/canelones.webp" alt="Imagen de un plato de canelones de verdura"></td>
-            <td>
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-            </td>
-        </tr>
-        <tr>
-            <td>Mondongo</td>
-            <td><img src="img/mondongo.jpg" alt="Imagen de un plato de mondongo"></td>
-            <td>
-                <img class="star" src="img/star_77949.ico" alt="Imagen de estrella a modo representación de puntaje">
-            </td>
-        </tr>
-    </table>
+    <h2>Más sobre mí</h2>
+    <ul>
+        <li><a href="ranking.html" target="_blank">Ver mi ranking de comidas</a></li>
+        <li><a href="trivia.html" target="_blank">Jugar a la trivia de logos</a></li>
+    </ul>
 
     <!-- Botón para volver al inicio -->
     <a href="#top" class="back-to-top">Volver al inicio</a>
