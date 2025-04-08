@@ -35,15 +35,29 @@ aside p {
 
 }
 
+.playlist li {
+    margin: 10px; 
+    background-color: rgb(107, 75, 137);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.playlist li:hover {
+    background-color: rgb(85, 55, 117);
+    color: white;
+}
+
 .playlist li a {
-    margin: 10px 0; 
+    margin: 10px; 
     list-style: none; 
     color: plum; 
     background-color: transparent;
     border: none; 
-    padding: 0;
+    padding: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 17px;
     font-style: oblique;
 
 }
@@ -294,7 +308,6 @@ nav ul {
 .botton {
     text-align: center;
     padding: 20px;
-    margin-top: 200px;
 }
 
 .botton2 {
