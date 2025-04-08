@@ -21,7 +21,7 @@
         </div>
         <p id="feedback" style="font-weight: bold;"></p>
     </div>
-    <a href="index.html" class="back-to-top">Volver al inicio</a>
+    <a href="index.html" class="back-to-top">Volver a la página principal</a>
 
     <script>
         // Preguntas y respuestas
@@ -99,7 +99,7 @@
                 feedback.textContent = "¡Correcto! 🎉";
                 currentQuestion++;
                 if (currentQuestion < questions.length) {
-                    setTimeout(loadQuestion, 1000); // Cargar la siguiente pregunta después de 1 segundo
+                    setTimeout(loadQuestion, 1000); 
                 } else {
                     feedback.textContent = "¡Felicidades! Has completado la trivia. 🎉, hacé clic en el botón para volver a la pagina principal 👋 ";
                 }
@@ -112,5 +112,9 @@
         // Cargar la primera pregunta al inicio
         loadQuestion();
     </script>
+
+<footer>
+    <p>© 2025 Catalina Tempra Otero. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
