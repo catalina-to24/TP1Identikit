@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
+    <nav class="indice">
+        <ul>
+            <li><a href="ranking.html">Ver mi ranking de comidas</a></li>
+            <li><a href="index.html">Sobre mi</a></li>  
+            <li><a href="playlist.html">Videos musicales</a></li>
+            <li><a href="trivia.html">Jugar a la trivia de logos</a></li>
+        </ul>
+    </nav>
+
     <h1>Trivia de logos</h1>
     <div id="trivia">
         <p id="question">¿De qué marca es este logo?</p>
@@ -21,10 +30,9 @@
         </div>
         <p id="feedback" style="font-weight: bold;"></p>
     </div>
-    <a href="index.html" class="back-to-top">Volver a la página principal</a>
 
     <script>
-        // Preguntas y respuestas
+        
         const questions = [
             {
                 logo: "img/McDonalds.png",
@@ -82,7 +90,7 @@
             document.getElementById("logo").src = question.logo;
             document.getElementById("feedback").textContent = "";
             const optionsDiv = document.getElementById("options");
-            optionsDiv.innerHTML = ""; // Limpiar opciones anteriores
+            optionsDiv.innerHTML = ""; 
             question.options.forEach(option => {
                 const button = document.createElement("button");
                 button.textContent = option;

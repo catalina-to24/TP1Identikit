@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: rgb(212, 189, 233);
+    font-family: 'Roboto', sans-serif;
 }
 .center-content {
     display: flex;
@@ -63,12 +64,6 @@ aside p {
 }
 
 
-.secondaryPage h1 {
-    padding-top: 0;
-    margin-top: 30px;
-
-}
-
 .indice {
     background-color: rgb(107, 75, 137);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -106,20 +101,18 @@ aside p {
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
     color: plum;
     margin-bottom: 0;
     background-color: rgb(107, 75, 137);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
+    margin-top: 100px;
     width: 500px;
     border-radius: 20px;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
@@ -132,7 +125,6 @@ blockquote {
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
     color: plum;
     background-color: rgb(107, 75, 137);
@@ -143,7 +135,6 @@ h2 {
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
     color: plum;
     background-color: rgb(107, 75, 137);
@@ -158,11 +149,12 @@ h3 {
 .video-container {
     position: relative;
     padding-bottom: 10%;
-    height: 0;
+    height: 300px;
     max-width: 100%;
     border-radius: 20px;
     text-align: center;
     margin-top: 0;
+    background-color: rgb(107, 75, 137);
 }
 .video-container iframe {
     top: 0;
@@ -182,7 +174,6 @@ h3 {
 }
 .pie-pagina p {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
     color: plum;
 
@@ -199,7 +190,6 @@ table {
 }
 
 td {
-    font-family: 'Roboto', sans-serif;
     border-radius: 15px;
     text-align: center;
     padding: 10px;
@@ -266,7 +256,6 @@ nav ul {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: white;
     background-color: rgb(107, 75, 137);
@@ -300,7 +289,6 @@ nav ul {
 }
 
 #question {
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: rgb(85, 55, 117);
     margin-bottom: 20px;
